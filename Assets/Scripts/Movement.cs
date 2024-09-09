@@ -34,6 +34,10 @@ public class Movement : MonoBehaviour
     void Update()
     {
         Movements();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     private void Movements()
